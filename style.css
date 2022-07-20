@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-image: url("Images/bg.jpg");
+  background-size: cover;
+  box-shadow: rgba(0, 0, 0, 0.8) 0 0 0 10000px inset;
+  color: #fff;
+  height: 100%;
+  padding-bottom: 100px;
+}
+
+h2 {
+  margin-bottom: 15px;
+  color: blue;
+}
+
+button {
+  cursor: pointer;
+}
+
+.logo {
+  text-align: center;
+  height: 260px;
+}
+
+.logo img {
+  margin-top: -150px;
+  height: 430px;
+}
+
+.main-wrapper {
+  max-width: 650px;
+  margin: auto;
+  backdrop-filter: blur(0px) saturate(180%);
+  -webkit-backdrop-filter: blur(0px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  border-radius: 12px;
+  padding: 50px;
+  margin-top: -115px;
+}
+
+form div {
+  padding: 15px 0;
+}
+
+form div label {
+  display: block;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+form div input {
+  height: 50px;
+  width: 100%;
+  font-size: 18px;
+  padding: 0 10px;
+}
+
+form div button {
+  cursor: pointer;
+  padding: 10px 30px;
+  font-size: 18px;
+  background-color: lightblue;
+  color: blue;
+  border: none;
+  font-weight: bold;
+  border-radius: 12px;
+}
+
+form ul {
+  list-style: none;
+}
+
+form ul li {
+  color: red;
+}
+
+.no-acc-register {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.no-acc-register button {
+  padding: 14px;
+  font-size: 18px;
+  background-color: lightblue;
+  color: blue;
+  border: none;
+  font-weight: bold;
+  width: 140px;
+  border-radius: 12px;
+}
+
+.no-acc-register p {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.custom-modal {
+  display: none;
+  background-color: #252a2f;
+  border-radius: 12px;
+  box-shadow: rgba(255, 255, 255, 0.8) 0 0 1000px 1000px;
+  padding: 50px;
+  max-width: 650px;
+  margin: auto;
+  position: absolute;
+  top: 10%;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+.custom-modal button#closeModal {
+  height: 20px;
+  width: 20px;
+  color: white;
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  font-weight: bold;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+
+.container {
+  padding-top: 50px;
+}
+
+.inner-container {
+  border: none;
+  padding: 15px;
+  backdrop-filter: blur(0px) saturate(180%);
+  -webkit-backdrop-filter: blur(0px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  border-radius: 12px;
+}
+
+.inner-container.left-side {
+  text-align: center;
+}
+
+.inner-container img {
+  width: 70%;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.inner-container.right-side form {
+  display: flex;
+  height: 100px;
+  gap: 5px;
+}
+
+.inner-container.right-side form textarea {
+  width: 85%;
+  border: none;
+  padding: 10px;
+  resize: none;
+  border-radius: 12px;
+  backdrop-filter: blur(0px) saturate(180%);
+  -webkit-backdrop-filter: blur(0px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  color: white;
+}
+
+.inner-container.right-side form button {
+  width: 15%;
+  border: none;
+  background-color: lightgray;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 12px;
+}
+
+#deleteProfile {
+  border: 1px solid red;
+  color: red;
+  padding: 10px 15px;
+  border-radius: 12px;
+  background-color: rgb(241, 169, 169);
+}
+
+#allPostsWrapper .single-post {
+  background-color: #eaeaea;
+  padding: 15px;
+  margin-top: 15px;
+  color: #000;
+  border-radius: 12px;
+}
+
+#allPostsWrapper .single-post .post-content {
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+  font-size: 22px;
+  word-break: break-word;
+}
+
+.post-actions {
+  display: flex;
+  justify-content: flex-end;
+  color: gray;
+  margin-top: 5px;
+}
+
+.like-btn {
+  padding: 5px 15px 5px 20px;
+  border: none;
+  border-radius: 12px;
+  color: blue;
+  background-color: lightblue;
+}
+
+.dislike-btn {
+  padding: 5px 15px 5px 20px;
+  border: none;
+  border-radius: 12px;
+  color: #ff7518;
+  background-color: #ffc87c;
+  font-weight: bold;
+}
+
+.comment-btn {
+  background-image: url(/Images/comment.png);
+  padding: 5px 15px 5px 40px;
+  background-repeat: no-repeat;
+  background-position: 10px;
+  border: none;
+  border-radius: 12px;
+}
+
+.remove-btn {
+  padding: 5px 15px 5px 20px;
+  border: none;
+  border-radius: 12px;
+  color: red;
+  background-color: rgb(241, 169, 169);
+  font-weight: bold;
+}
+
+.post-comments form {
+  height: 50px !important;
+  margin-top: 5px;
+}
+
+.post-comments form input {
+  width: 85%;
+  padding: 0px 10px;
+  border-radius: 12px;
+  height: 50px;
+}
+
+.post-comments form button {
+  width: 15%;
+  background-color: grey;
+  height: 50px;
+}

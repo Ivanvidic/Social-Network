@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="./JS/Post.js"></script>
+    <script defer src="./JS/User.js"></script>
+    <script defer src="./JS/Session.js"></script>
+    <script defer src="./JS/boolean.js"></script>
+    <title>Boolean</title>
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-3">
+                <div class="inner-container left-side">
+                    <img src="./Images/profilepicture.png" alt="">
+                    <p><b id="username"></b></p>
+                    <p id="email"></p>
+
+                    <button id="editProfile">Edit Profile</button>
+                    <button id="logout">Log out</button>
+                </div>
+            </div>
+
+            <div class="col-md-9">
+                <div class="inner-container right-side">
+                    <form id="postForm">
+                        <textarea id="postContent" placeholder="Write a post"></textarea>
+                        <button>Post</button>
+                    </form>
+
+                    <div id="allPostsWrapper"></div>
+                </div>
+                
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="custom-modal">
+        <button id="closeModal">X</button>
+        <form id="editForm">
+            <h2>Edit your profile</h2>
+
+            <div> 
+                <label for="username">Username: *</label>
+                <input type="text" id="edit_username" name="username" placeholder="John.Doe1">
+            </div>
+
+            <div>
+                <label for="edit_email">Email Address: *</label>
+                <input type="text" id="edit_email" name="edit_email" placeholder="JohnDoe@gmail.com">
+            </div>
+            <div>
+                <button>Edit</button>
+            </div>
+        </form>
+
+        <hr>
+
+        <button id="deleteProfile">Delete Profile</button>
+    </div>
+
+</body>
+</html>
